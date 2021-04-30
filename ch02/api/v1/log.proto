@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package log.v1;
+
+option go_package = "github.com/Nov11/book-distri-service-go/ch02/api/v1";
+
+message Log {
+  bytes value = 1;
+  uint64 offset = 2;
+}
